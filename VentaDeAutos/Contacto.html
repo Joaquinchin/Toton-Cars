@@ -12,28 +12,31 @@
 
 <body>
     <form>
-        <input class="textoContacto" type="text" placeholder="INTRODUZCA SU NOMBRE" size="36" maxlength="15" />
+        <input id="Nombre" class="textoContacto" type="text" placeholder="INTRODUZCA SU NOMBRE" size="36" maxlength="15" />
         <br>
-        <input class="textoContacto" type="text" placeholder="INTRODUZCA SU APELLIDO" size="36" maxlength="15" />
+        <input id="Apellido" class="textoContacto" type="text" placeholder="INTRODUZCA SU APELLIDO" size="36" maxlength="15" />
         <br>
-        <input class="textoContacto" type="text" placeholder="INTRODUZCA SU NUMERO DE TELEFONO" size="36"
+        <input id="Telefono" class="textoContacto" type="text" placeholder="INTRODUZCA SU NUMERO DE TELEFONO" size="36"
             maxlength="15" />
         <br>
         <input class="textoContacto" type="text" placeholder="INTRODUZCA SU EMAIL" size="36" maxlength="25" />
+        <br>
+        <label>*OPCIONAL*</label>
         <br>
         <label>Sexo: </label>
         <input type="radio" name="sexo" />Masculino
         <input type="radio" name="sexo" />Femenino
         <input type="radio" name="sexo" />No binario
         <br>
-        <label>Fecha: </label>
+        <label>Fecha de nacimiento: </label>
+        <br>
         <input type="date" />
         <br>
         <label>Contanos tu problema!</label>
         <br>
         <textarea rows="5" cols="20"></textarea>
         <br>
-        <button value="Enviar">ENVIAR</button>
+        <input id="BotonEnviar" type="button" value="Enviar" onclick="Check()" class="texto3">
     </form>
 </body>
 
